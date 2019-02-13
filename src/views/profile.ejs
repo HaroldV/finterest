@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image <% image.title %> </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <%- include("partials/head") %>
+    </head>
+    <body>
+        <%- include("partials/navigation") %>
+        <div class="container p-6">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <div class="card animated fadeInDown" style="width: 18rem;">
+                        <img class="card-img-top" src="<%= image.path %>" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= image.title %></h5>
+                            <p class="card-text"><%= image.description %>.</p>
+                            <p class="card-text"><%= format(image.created_at) %>.</p>
+                            <a href="/image/<%= image._id %>/delete" class="btn btn-danger btn-block">Delete Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
