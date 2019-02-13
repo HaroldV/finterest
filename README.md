@@ -1,6 +1,7 @@
 # finterest
 
-Nodejs and Mongodb, Pinterest Style App
+Nodejs and Mongodb, Pinterest Style App  <br />
+Developed through this tutorial => https://www.youtube.com/watch?v=aNYX2F1RX-s
 
 - Home Page
 
